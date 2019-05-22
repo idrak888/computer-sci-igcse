@@ -1,0 +1,114 @@
+.main-display {
+    margin-left: 360px;
+    margin-top: 120px;
+    padding: 20px;
+}
+.Header nav{
+    padding: 20px;
+    filter: drop-shadow(0 0 0.5rem rgb(128, 128, 128));
+
+}
+.Header form{
+    margin: auto;
+    display: block;
+}
+.Header form input {
+    width: 300px;
+    margin-top: 3px;
+    padding: 6px;
+    height: 40px;
+    border: 1px solid rgb(180, 180, 180);
+}
+
+.Header form .dropdown {
+    position: absolute;
+    width: 300px;
+    padding: 6px;
+    background-color: rgb(238, 237, 237);
+    display: none;
+}
+
+.Header form .dropdown ul li {
+    list-style-type: none;
+    margin-top: 4px;
+}
+.Header form .btn {
+    height: 40px;
+    border-radius: 0;
+    margin-top: -4.5px;
+}
+.SidePanel .wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.SidePanel .wrapper #sidebar {
+    padding: 100px 15px;
+    width: 340px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 100vh;
+    overflow-y: scroll;
+    z-index: 999;
+    background: rgb(115, 134, 213);
+    color: #fff;
+    transition: all 0.3s;
+}
+.Main .toggler {
+    display: none;
+    position: absolute;
+}
+.SidePanel .wrapper #sidebar a{
+    display: block;
+    padding: 12px 6px;
+    color: white;
+}
+.SidePanel .wrapper #sidebar .cross {
+    display: none;
+    float: right;
+    cursor: pointer;
+}
+@media only screen and (max-width: 700px) {
+    .main-display {
+        margin-left: 320px;
+    }
+    .SidePanel .wrapper #sidebar {
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 625px) {
+    .main-display {
+        margin-top: 150px;
+        margin-left: 290px;
+    }
+    .SidePanel .wrapper #sidebar {
+        padding-top: 150px;
+        width: 260px;
+    }
+    .Header form .btn {
+        margin-top: -6px;
+    }
+}
+@media only screen and (max-width: 537px) {
+    .SidePanel .wrapper{
+        display: none;
+    }
+    .SidePanel .wrapper #sidebar {
+        width: 100%;
+    }
+    .SidePanel .wrapper #sidebar .cross {
+        display: block;
+    }
+    .Main .toggler {
+        display: inline;
+    }
+    .main-display {
+        margin-left: 50px;
+    }
+}
+@media only screen and (max-width: 430px) {
+    .Header form input, .Header form .dropdown{
+        width: 200px;
+    }
+}
